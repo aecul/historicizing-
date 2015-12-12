@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Center</title>
+
+    <style type="text/css">
+    /*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ 
+*/
+
+
+body {
+    
+width: 99%;
+    
+height: 100%;
+    
+font-family: Georgia, serif;
+    
+color: #000;
+    background-color: #eee;
+}
+
+
+html {
+    
+width: 99%;
+    
+height: 100%;
+}
+
+h1{
+margin: 12px; 
+text-transform: uppercase;
+text-align: center; 
+font-family: Times New Roman, serif; 
+font-size: 100px
+line-height: .2;
+letter-spacing: 10px;}
+h2 {
+margin: 12px; 
+text-transform: uppercase;
+text-align: center; 
+font-family: Georgia, serif; 
+font-size: 16px
+line-height: .2;
+letter-spacing: 10px;}
+h3 {
+    
+margin: 0 0 35px;
+    
+text-transform: uppercase;
+text-align: right;
+    
+font-family: Georgia, serif;
+    
+font-weight: 700;
+    
+letter-spacing: 1.5px;
+}
+
+h4,
+h5,
+h6 {
+text-align: center
+font-family: Georgia, serif;
+    
+font-weight: 700;
+    
+letter-spacing: 1.5px;
+}
+
+p {
+    
+margin: 75px 0 75px;
+    
+font-size: 16px;
+
+text-align: left;
+padding-left: 10px;
+padding-right: 10px;
+background-color: #eeeeee;    
+line-height: 1;
+text-indent: 20px;
+color: #000;}
+
+
+@media(min-width:768px) {
+    
+p {
+        
+margin: 0 0 20px;
+        
+font-size: 20px;
+        
+line-height: 1.6;
+    }
+}
+
+
+a {
+    color: #682a7e;
+
+-webkit-transition: all .2s ease-in-out;
+    
+-moz-transition: all .2s ease-in-out;
+    
+transition: all .2s ease-in-out;
+}
+
+
+a:hover,
+a:focus {
+    
+text-decoration: none;
+    
+color: #e0b0ff;
+}
+
+
+.light {
+    
+font-weight: 400;
+}
+
+
+.navbar-custom {
+    
+margin-bottom: 0;
+    
+border-bottom: .5px solid rgba(255,255,255,.3);
+    
+text-transform: uppercase;
+    
+font-family: Impact, fantasy;
+    
+background-color: #000;
+}
+
+
+.navbar-custom .navbar-brand {
+    
+font-weight: 700;
+}
+
+
+.navbar-custom .navbar-brand:focus {
+    
+outline: 0;
+}
+
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    
+padding: 4px 6px;
+    
+font-size: 16px;
+    
+color: #000;
+}
+
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    
+outline: 0;
+}
+
+
+.navbar-custom a {
+    
+color: #000;
+}
+
+
+.navbar-custom .nav li a {
+    
+-webkit-transition: background .3s ease-in-out;
+    
+-moz-transition: background .3s ease-in-out;
+    
+transition: background .3s ease-in-out;
+}
+
+
+.navbar-custom .nav li a:hover {
+    
+outline: 0;
+    
+color: rgba(255,255,255,.8);
+    
+background-color: transparent;
+}
+
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    
+outline: 0;
+    
+background-color: transparent;
+}
+
+
+.navbar-custom .nav li.active {
+    
+outline: 0;
+}
+
+
+.navbar-custom .nav li.active a {
+    
+background-color: rgba(255,255,255,.3);
+}
+
+
+.navbar-custom .nav li.active a:hover {
+    
+color: #000;
+}
+
+
+@media(min-width:768px) {
+    
+.navbar-custom {
+        
+padding: 20px 0;
+        
+border-bottom: 0;
+        
+letter-spacing: 1px;
+        
+background: 0 0;
+        
+-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        
+-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        
+transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    
+.navbar-custom.top-nav-collapse {
+        
+padding: 0;
+        
+border-bottom: 1px solid rgba(255,255,255,.3);
+        
+background: #000;
+    }
+}
+
+
+.intro {
+    
+display: table;
+    
+width: 100%;
+    
+height: auto;
+    
+padding: 100px 0;
+    
+text-align: center;
+    
+color: #000;
+    
+background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    
+background-color: #eee;
+-webkit-background-size: cover;
+    
+-moz-background-size: cover;
+    
+background-size: cover;
+    
+-o-background-size: cover;
+
+}
+
+
+.intro .intro-body {
+    
+display: table-cell;
+    
+vertical-align: middle;
+}
+
+
+.intro .intro-body .brand-heading {
+    
+font-size: 30px;
+}
+
+
+.intro .intro-body .intro-text {
+    
+font-size: 18px;
+}
+
+
+@media(min-width:768px) {
+    
+.intro {
+        
+height: 50%;
+        
+padding: 0;
+    }
+
+    
+.intro .intro-body .brand-heading {
+        
+font-size: 100px;
+    }
+
+    
+.intro .intro-body .intro-text {
+        
+font-size: 26px;
+    
+-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        
+-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        
+transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+}
+
+
+.btn-circle {
+    
+width: 50px;
+    
+height: 50px;
+    
+margin-top: 15px;
+    
+padding: 0px 16px;
+    
+border: 2px solid #fff;
+    
+border-radius: 100%!important;
+    
+font-size: 40px;
+    
+color: #fff;
+    
+background: 0 0;
+    
+-webkit-transition: background .3s ease-in-out;
+    
+-moz-transition: background .3s ease-in-out;
+    
+transition: background .3s ease-in-out;
+}
+
+
+.btn-circle:hover,
+.btn-circle:focus {
+    
+outline: 0;
+    
+color: #fff;
+    
+background: rgba(255,255,255,.1);
+}
+
+
+.btn-circle i.animated {
+    
+-webkit-transition-property: -webkit-transform;
+    
+-webkit-transition-duration: 1s;
+    
+-moz-transition-property: -moz-transform;
+    
+-moz-transition-duration: 1s;
+}
+
+
+.btn-circle:hover i.animated {
+    
+-webkit-animation-name: pulse;
+    
+-moz-animation-name: pulse;
+    
+-webkit-animation-duration: 1.5s;
+    
+-moz-animation-duration: 1.5s;
+    
+-webkit-animation-iteration-count: infinite;
+    
+-moz-animation-iteration-count: infinite;
+    
+-webkit-animation-timing-function: linear;
+    
+-moz-animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes pulse {    
+    
+0% {
+        
+-webkit-transform: scale(1);
+        
+transform: scale(1);
+    }
+
+    
+50% {
+        
+-webkit-transform: scale(1.2);
+        
+transform: scale(1.2);
+    }
+
+    
+100% {
+        
+-webkit-transform: scale(1);
+        
+transform: scale(1);
+    }
+}
+
+
+@-moz-keyframes pulse {    
+    
+0% {
+        
+-moz-transform: scale(1);
+        
+transform: scale(1);
+    }
+
+    
+50% {
+        
+-moz-transform: scale(1.2);
+        
+transform: scale(1.2);
+    }
+
+    
+100% {
+        
+-moz-transform: scale(1);
+        
+transform: scale(1);
+    }
+}
+
+
+.content-section {
+    
+padding-top: 100px;
+}
+
+
+.download-section {
+    
+width: 100%;
+    
+padding: 50px 0;
+    
+color: #fff;
+    
+background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    
+background-color: #000;
+    
+-webkit-background-size: cover;
+    
+-moz-background-size: cover;
+    
+background-size: cover;
+    
+-o-background-size: cover;
+}
+
+
+#map {
+    
+width: 100%;
+    
+height: 200px;
+    
+margin-top: 100px;
+}
+
+
+@media(min-width:767px) {
+    
+.content-section {
+        
+padding-top: 250px;
+    }
+
+    
+.download-section {
+        
+padding: 100px 0;
+    }
+
+    
+#map {
+        
+height: 400px;
+        
+margin-top: 250px;
+    }
+}
+
+
+.btn {
+    
+border-radius: 0;
+    
+text-transform: uppercase;
+    
+font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+font-weight: 400;
+    
+-webkit-transition: all .3s ease-in-out;
+    
+-moz-transition: all .3s ease-in-out;
+    
+transition: all .3s ease-in-out;
+}
+
+
+.btn-default {
+    
+border: 1px solid #42dca3;
+    
+color: #42dca3;
+    
+background-color: transparent;
+}
+
+
+.btn-default:hover,
+.btn-default:focus {
+    
+border: 1px solid #42dca3;
+    
+outline: 0;
+    
+color: #000;
+    
+background-color: #42dca3;
+}
+
+
+ul.banner-social-buttons {
+    
+margin-top: 0;
+}
+
+
+@media(max-width:1199px) {
+    
+ul.banner-social-buttons {
+        
+margin-top: 15px;
+    }
+}
+@media(max-width:767px) {
+    
+ul.banner-social-buttons li {
+        
+display: block;
+        
+margin-bottom: 20px;
+        
+padding: 0;
+    }
+
+    
+ul.banner-social-buttons li:last-child {
+        
+margin-bottom: 0;
+    }
+}
+
+
+footer {
+    
+padding: 50px 0;
+}
+
+
+footer p {
+    
+margin: 0;
+}
+
+
+::-moz-selection {
+    
+text-shadow: none;
+    
+background: #fcfcfc;
+    
+background: rgba(255,255,255,.2);
+}
+
+
+::selection {
+    
+text-shadow: none;
+    
+background: #fcfcfc;
+    
+background: rgba(255,255,255,.2);
+}
+
+
+img::selection {
+    
+background: 0 0;
+}
+
+
+img::-moz-selection {
+    
+background: 0 0;
+}
+
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+</style>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#definition">Introduction</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#history">History and Contentions</a>
+                    </li>
+		    <li>
+                        <a class="page-scroll" href="#printmedia">Print Media</a>
+		    </li>
+		    <li>
+                        <a class="page-scroll" href="#workscited">Works Cited</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Center</h1>
+                        <h4>The element, the attribute, the value.</h4>
+<h4>By Lucy Bixby</h4>
+                        <a href="#definition" class="page-scroll">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="definition" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>What is Center?</h2>
+                <p><center> < Center > is an alignment attribute used in CSS. Its primary function is to bring text to the center of a line on a page. Here is an example of centered text:<center></p>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Lorem_ipsum_centered.svg/1280px-Lorem_ipsum_centered.svg.png" alt="Centered lorum ipsum" style="width:500px"></img></center>
+<p>This can be done with the text-align property in CSS for text groupings like p or h1. Images and blocks can also be centered in CSS by setting the margin-right and margin-left properties to auto (Bos). Center is generally viewed as a stylistic tool for altering the look of content rather than as a building block of the content.</p>
+<p>The HTML element (now attribute) Center went through several iterations before becoming what we know it as today. The primary players involved in the element's changes were coders working with browser companies like Netscape and W3C in the 1990s. Each of these companies and individuals had a different idea of what they wanted Center to accomplish and how it should function within an an HTML document. In her book <i>Writing Technologies,</i> theorist Christina Haas explains that many decisions about technology are not made based on what is "better," but rather on politics and other decisions that may be somewhat arbitrary (139-40). This concept is demonstrated by Center's development in Netscape, HTML, and CSS.</p> 
+<p>A primary contention surrounding its foundations was the question of what an HTML tag should be for. If Center, a design-related tag, was its own element to be placed anywhere in an HTML document, should all design elements have their own tag? This would make HTML cluttered and hard to work with. Many coders at W3C were proponents of moving all design elements into CSS.</p> 
+<p>But there were good arguments on both sides. CSS still can't achieve certain design features, such as vertical centering, and can be limiting in ways that are different from HTML (Holzschlag). Often, the decisions that were made about the way Center would work in HTML or CSS were based on individuals' personal preferences, as demonstrated by emails sent by W3C coders to one another in the mid-90s. As Pilgrim writes, "The [codes] that win are the ones that ship." Programmer Lou Montulli suggested adding Center as a "body tag" to the "HTML 3 spec," and fellow coder Joe English countered by saying, "If you think they're good ideas, why not submit a formal proposal to the HTML working group? Heck, even an informal proposal would do; Eric Bina just sorta casually asked about background images and the BODY BACKGROUND attribute ended up in the draft spec as a result." Haas's theories in <i>Writing Technologies</i> are supported by the W3C coders: decisions about specifications and other changes often depended upon who got there first or who pushed their idea the hardest, not necessarily on what was more suited to the purpose of the element/attribute/tag. In fact, who could really say what would be best? There are pros and cons to Center's use in both HTML and CSS. When a gray area exists, seemingly arbitrary factors must weigh in to ensure a decision, good or bad, is made in the end.</p> 
+<p>Christina Haas also writes about how technology is often viewed in too-simple terms in her article "On the Relationship Between Old and New Technologies." To an outside observer, it may seem like HTML 3.2 swiftly and thoroughly replaced NHTML extensions, and then CSS style sheets did the same to the extensions in HTML 4.0. However, this way of thinking is an example of Haas's "simple replacement model," which imagines a very linear progression in terms of technological advancement and replacement (Haas 210). In fact, due to the fact that old and new versions of browsers render code differently, at times it is necessary for CSS and deprecated HTML elements to work together as well.</p> 
+<p>For example, to create this website, I wanted some paragraphs to be left-aligned and some to be centered. While there may be a way to achieve this in CSS, I was not sure what it could be. Therefore, I used CSS to set the text-align element for paragraphs to "left," and used "Center" tags on a few paragraphs within the HTML. The webpage looks just the way I wanted it to, and works perfectly well. The continued coexistence of the Center CSS attribute and HTML element supports Haas's posit that old and new technologies often work in tandem with one another instead of a better, new technology swooping in and obliterating all traces of the old technology (210). The way Center is used in coding has been determined over the years by a series of professional figures in the industry as well as by public opinion. This report will trace the history of Center and the contentions surrounding its birth and development.</p>
+
+            </div>
+<center><a class="page-scroll" href="#page-top">Top</a> / <a class="page-scroll" href="#history">Next</a></center>        
+</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="history" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>History and Contentions</h2>
+<h3>Center Origins: Netscape</h3>
+                <p>In the early days of HTML, its use was primarily placing content on a page. The focus was not on the style or visual qualities of the content, and in fact industry professionals were extremely adamant about this (Pollack). They preferred to keep HTML as simple and basic as possible. But before long, designers started thinking more about these visuals. Before the advent of style sheets, HTML was a good channel for changing the look of the content through coded elements. Designers asked themselves how they could move text and other objects around on a page to create a balanced, appealing layout and a hierarchy for readers to know which text is most important to focus on. Unlike the "purist" coders, early designers pursued a goal of setting apart text and objects on a page.</p> 
+<p>Center was originally conceived in NHTML, or Netscape-HTML. Netscape Communications Corp. was a browser company that developed their own code--some of which was similar enough to HTML to function as HTML "extensions" in the Netscape browser, Navigator ("HTML 3.2 and Netscape 3.0: Block Elements"). Center was a familiar concept from printed text and allowed users to highlight content by changing its alignment. HTML 3.0 was working on a "P align=center" tag, but Netscape's version simplified this idea down to just "Center" (Pollack). The alignment extensions and other visual elements from Netscape, like Center, eventually caught on enough that they were adopted by the W3C following an agreement by the large browser companies to standardize HTML (Raggett, "A History of HTML").</p>
+                <h3>HTML 3.2</h3>
+<p>Released in 1997, the collaborative HTML version 3.2 used Center as a block element enclosed by brackets that could be inserted into a portion of text to change the alignment (Korpela). The alignment of images could be adjusted using the align attribute and a value of middle, top, bottom, left, or right (Raggett, "HTML 3.2"). In order to center a larger segment of a webpage, designers could also use the DIV element with the attribute Align and a value of Center ("HTML 3.2 and Netscape 3.0: Block Elements.").</p> 
+<center><img src=img/f13-2.gif alt="center tag" style="width:400px"></img>
+<img src=img/center11.gif alt="div center" style="width:450px"></img></center>
+<p>This allowed a lot of freedom with how and where designers could center text or other objects, but it could clutter up an HTML file with stylistic code (Sanders).</p>
+<p>Initially, there was some contention over the Netscape extensions that eventually migrated into HTML. Many who were familiar with the industry felt that they were a disorganized way of offering layout customization (Sanders). While Netscape's extensions were appealing to the general public because they allowed designers to change the way a page looked, they also limited style options because they merely "[mimicked] the most popular fraction of style sheets' functionality" (Pollack). Style sheets, though yet to really be established, were an idea preferable to coders to the "creeping featurism" that would result from "adding random tags as we see fit" (Sanders). Many W3C coders wanted to maintain HTML's original function and purpose: organizing content, not designing it (Pollack).</p> 
+<p>On the other side, some saw the benefits of the Netscape extensions. They were usable by multiple browsers; the public liked them; and overall they could be a positive addition to HTML coding (Montulli "NCSA Mosaic", Preece).</p>
+<p>Netscape stirred up some controversy by stating that their extensions were actually part of the HTML 3.0 specifications (Montulli "NCSA Mosaic"). Lou Montulli made a proposal to Dave Raggett and "whoever else...would listen" to actually add these extensions to the HTML 3.0 spec (Montulli "NCSA Mosaic"). Montulli was a "founding engineer" at Netscape, and in fact was still working at Netscape with the position of a "representative to the W3C" at the time HTML 3.2 was in development (Montulli "Lou Montulli"). He viewed Center and other NHTML tags from the perspective of someone who helped create them. The reasons behind Netscape adding the tags to their browser--greater freedom of design, more options for adding visuals to a webpage--were in Montulli's mind as he proposed adding the tags to the HTML spec. Netscape's extensions worked for the crossection public that needed them. Ultimately, because of proposals like Montulli's, they were added.</p> 
+<h3>CSS</h3>
+<p>Even so, style sheets still seemed like the ideal channel for elements like the "notorious" Center (Batchelor, Sanders). As stylistic HTML elements gave way to style sheets and CSS was developed and released, Center was deprecated from HTML 4.0 and added to CSS, where it serves as an attribute for text-align ("Alignment, Font Styles, and Horizontal Rules"). This allows stylistic and visual decisions for a page, in this case regarding alignment for text, to all be located in one style sheet rather than scattered throughout the HTML of a document (Sanders).</p> 
+<center><img src="http://pad2.whstatic.com/images/thumb/5/5d/Center-Web-Page-Content-Using-CSS-Step-3.jpg/670px-Center-Web-Page-Content-Using-CSS-Step-3.jpg" alt="Centering in CSS" style="width:400px"></img></center>
+<p>However, certain tasks such as centering an object vertically are complicated to execute in CSS because of the rules that hold CSS in place (Holzschlag). Additionally, HTML documents like emails did not translate well into the world of CSS; it is often still preferable in these scenarios to utilize depreciated elements like Center than to try to write CSS into something like an email ("HTML Email Design"). </p>
+<center><img src=img/jake-larg.png alt="Vertical centering in CSS" style="width:700px"></img></center>
+<p>To an outside observer, it may seem like HTML 3.2 swiftly and thoroughly replaced NHTML extensions, and then CSS style sheets did the same to the extensions in HTML 4.0. Because of CSS's purpose, it is more practical for designers to work "top-down" by developing CSS styles and then worrying about whether or not those decisions would be displayed correctly in an older browser (Fahrner, Lilley). However, especially in the early days of CSS, because of browser inconsistency it was tempting for designers to work in the same way they had with HTML 3.2 and write everything as elements in the HTML, ignoring CSS, cluttered as this process may be (Fahrner). The "transitional" HTML 4.01 and XHTML 1.0 allowed the use of deprecated elements, which does not equal "disallowed" (Cabaniss, Navarro). Browsers and HTML versions continue marching towards consistency in the way CSS codes are displayed in order to promote the use of CSS, but for a time it was necessary to allow the option for designers to utilize both the old elements and the new CSS attributes. Christina Haas's simple replacement model is represented in that the transitions between Center's function in NHTML, HTML, and CSS were not immediate or all-encompassing. Old and new technologies worked together to develop the way that code is written today.</p>            
+</div>
+<center><a class="page-scroll" href="#page-top">Top</a> / <a class="page-scroll" href="#printmedia">Next</a></center>         
+</div>
+    </section>
+<!-- Contact Section -->
+    <section id="printmedia" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Print Media</h2>
+<p>The decisions made about HTML and CSS by industry professionals have helped to determine the way that Center and other design tags are used in web media. In CSS, more options are available for using specific units and attributes to adjust the way an object looks on the page. It is much easier to center all headings, or all paragraphs, etc, using CSS than to go around adding Center elements to every single paragraph or heading as HTML required. Content is effectively separated from style with the implementation of CSS. Style sheets give the unique opportunity to make sweeping alterations and to view a web document from two different perspectives: the design (CSS) and the text (HTML). Since CSS has lasted this long, it seems like it is a good medium for both those who want options related to website design, like Lou Montulli, and those who want to keep design out of HTML, like several of the W3C original coders. </p>
+<p>Now that Center is comfortably established in CSS, writers can focus on how it should be used. Printed books and documents tend to use centered text mainly for headings, titles, dedications, quotes, or other objects that are meant to stand out or look apart (Digital Relativity). But even things that use Center acceptably, like poetry, may be better off when using left-align, as centering large blocks of text can appear childish rather than professional (Digital Relativity). Center can also draw unnecessary attention to text due to flaws like uneven beginnings of lines (Anthony). While the public of the 90s loved the ability to use Center in their Netscape and HTML codes, it is questionable whether using it is often the best choice.</p>
+<p>In print, centering text is used to draw the eye to something important or different. Titles are typically centered, especially when they are the focal point of an elaborately designed cover. Centering creates a balance on the page, and a designer can deliberately break this rule based on the look they want to achieve. For example, a chapter title may be left-aligned to make it stand out less or appear more streamlined with the rest of the text. In the case of the covers pictured below, the left-aligned title imitates the chaotic, uncanny feeling of the novel the cover represents, while the centered title reinforces the stability and balance of the government building pictured underneath it.</p>
+<center><img src=img/Crimeandpunishmentcover.png alt="Left-aligned book cover" style="width:200px"></img>
+<img src=img/cp.jpg alt="Centered book cover" style="width:200px"></img></center>
+<p>Similarly, block quotes or other elements of writing that are out of the ordinary tend to use centering to help the reader separate them from the rest of the text more easily.</p>
+<p>But modern internet style doesn't seem to abide as closely by these print media guidelines. Facebook and Twitter, two very popular social media platforms, are solidly in the left-alignment camp. Yahoo's homepage uses only a minimally-larger amount of centered text. Google uses centering for its homepage--but as soon as you search a term, everything switches over to left-align.</p>
+<center><img src=img/FB_News_Feed_Web_RGB_LG-copy.png alt="Left-aligned book cover" style="width:900px"></img></center>
+<p>The following is an example of centered text that is considered bad form in the online community ("Web Blooper of the Month"). It is harder to read than left-aligned text because the lines do not start in the same place. In his book <i>Designing Web Usability,</i> Jakob Nielsen says, "By having a steady starting point for the eye to start scanning, the user can read much faster than when faced with centered or right-justified text. Of course, it is acceptable to center or right-justify a few lines for effect, but one should not do so for blocks of text" (126).</p>
+<center><img src=img/WBloop14_NHASP.gif alt=lots of centered text style="width:450px"></img></center>
+<p>The negativity thrown in Center's direction is discouraging. Centered text is called "boring" and "weak" ("Centered Text," Johnson). In print media as well, blanket statements are made for important documents like resumes--"Don't center any of your text" (Zhang). But there are ways to make a page look nice and balanced using Center along with other tools that help the beginning of lines keep from being jagged or difficult to read ("Centered Text"). Overall, a mix of alignments can look really great on a web page, and centering can be a good thing when a designer is using it for a limited amount of text and has a purpose in mind (Cousins). It takes a good designer and a few best practices to know which alignment rules to follow and to figure out what looks the best and is most readable.</p>
+<p> Christina Haas's theories regarding the simple replacement model and decisions based on politics held true throughout the many steps that Center took to reach its current position in CSS. Old technologies like print media and depreciated versions of HTML tags continue to impact how web pages are built and designed today, as do decisions made by those involved in the beginning of HTML's development based on factors such as who had the most influence and who had the motivation to make suggestions. Center is a changing technology that has gone in the course of two decades from a significant NHTML tag to being disfavored by web design experts. It represents layers of web history and development in its format and usage.</p>
+</div>
+<center><a class="page-scroll" href="#page-top">Top</a> / <a class="page-scroll" href="#workscited">Works Cited</a></center>         
+</div>
+    </section>
+
+<!-- Bibliography -->
+    <section id="workscited" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Works Cited</h2>
+                <p><center><a href="http://www.w3.org/TR/html401/present/graphics.html#edef-CENTER">"Alignment, Font Styles, and Horizontal Rules."</a> <i>HTML 4.02 Specification.</i> Ed. Dave Raggett, Arnaud Le Hors, and Ian Jacobs. W3C, 1999. Web. 23 Oct. 2015.</center></p>
+<p><center>Anthony. <a href="http://uxmovement.com/content/why-you-should-never-center-align-paragraph-text/">"Why You Should Never Center Align Paragraph Text."</a> <i>Uxmovement.com.</i> UX Movement, 19 Jan. 2011. Web. 25 Oct. 2015.</center></p>
+<p><center>Batchelor, Mike. <a href="https://lists.w3.org/Archives/Public/www-style/1995Jul/0081.html">"NCSA Mosaic, Netscape, and HTML3."</a> <i>Lists.W3C.org.</i> W3C, 18 July 1995. Web. 25 Oct. 2015.</center></p>
+<p><center>Bos, Bert. "Centering Things." Web Style Sheets: CSS Tips and Tricks. W3C, 3 Sept. 2015. Web. 23 Oct. 2015.</center></p>
+<p><center>Cabaniss, Jelks. <a href="https://lists.w3.org/Archives/Public/html-tidy/2000JanMar/0497.html">"Complain on Center."</a> <i>Lists.W3C.org.</i> W3C, 30 Mar. 2000. Web. 25 Oct. 2015.</center></p>
+<p><center><a href="http://practicaltypography.com/centered-text.html">"Centered Text."</a> <i>Practicaltypography.com.</i> Practical Typography. Web. 25 Oct. 2015.</center></p>
+<p><center>Cousins, Carrie. <a href="http://tympanus.net/codrops/2012/06/19/line-that-up-proper-alignment-in-web-design/">"Line That Up."</a> <i>Tympanus.net.</i> Codrops, 19 June 2012. Web. 25 Oct. 2015.</center></p>
+<p><center>Digital Relativity. <a href="http://digitalrelativity.com/text-alignment-rules/">"Ooh, Center Align! Fancy! Wait... Text Alignment Rules?"</a> <i>DigitalRelativity.com.</i> Digital Relativity, 18 Dec. 2013. Web. 25 Oct. 2015.</center></p>
+<p><center>English, Joe. <a href="https://lists.w3.org/Archives/Public/www-style/1995Jul/0079.html">"NCSA Mosaic, Netscape, and HTML3."</a> <i>Lists.W3C.org.</i> W3C, 18 July 1995. Web. 25 Oct. 2015.</center></p>
+<p><center>Fahrner, Todd. <a href="https://lists.w3.org/Archives/Public/www-style/1997Jun/0042.html">"CSS and Presentational Markup."</a> <i>Lists.W3C.org.</i> W3C, 5 June 1997. Web. 25 Oct. 2015.</center></p>
+<p><center>Haas, Christina. <a href="http://4662wf15.clindgrencv.com/assets/docs/readings/wk2/haas-relationship-between-old-and-new-technologies.pdf">"On the Relationship Between Old and New Technologies."</a> <i>Computers and Composition</i> 16 (1999): 209-28. Web. 25 Oct. 2015.</center></p>
+<p><center>Haas, Christina. <a href="http://4662wf15.clindgrencv.com/assets/docs/readings/wk5/haas-writing-tech-chp6-human-cussedness-v2.pdf">"Social Dynamics, or Scientific Truth, or Sheer Human Cussedness."</a> <i>Writing Technology.</i> 1st ed. New York: Routledge, 1995. 137-65. Web. 25 Oct. 2015.</center></p>
+<p><center>Holzschlag, Molly. <a href="http://www.creativebloq.com/css3/seven-things-still-missing-css-1126553">"Seven Things Still Missing from CSS."</a> <i>Creative Bloq.</i> Future PLC, 5 Jan. 2012. Web. 23 Oct. 2015.</center></p>
+<p><center><a href="http://www.webreference.com/html3andns/block.html">"HTML 3.2 and Netscape 3.0: Block Elements."</a> <i>Webreference.com.</i> Web Reference, 14 Apr. 1996. Web. 23 Oct. 2015.</center></p>
+<p><center><a href="https://teamtreehouse.com/community/html-email-design-center-tag">"HTML Email Design | < Center > Tag."</a> <i>Team Treehouse</i>. Treehouse, 2013. Web. 11 Dec. 2015.</center></p>
+<p><center>Johnson, Joshua. <a href="http://designshack.net/articles/layouts/how-to-use-centered-alignments-tips-and-examples/">"How to Use Centered Alignments."</a> <i>Designshack.net.</i> Design Shack, 8 Feb. 2013. Web. 25 Oct. 2015.</center></p>
+<p><center>Korpela, Jukka. <a href="https://www.cs.tut.fi/~jkorpela/HTML3.2/5.14.html">"Center."</a> <i>Learning HTML 3.2 by Examples.</i> Tampere University of Technology, 16 Dec. 2010. Web. 23 Oct. 2015.</center></p>
+<p><center>Lilley, Chris. <a href="https://lists.w3.org/Archives/Public/www-style/1997Jun/0044.html">"CSS and Presentational Markup."</a> <i>Lists.W3C.org.</i> W3C, 6 June 1997. Web. 25 Oct. 2015.</center></p>
+<p><center>Lloyd, Ian. <a href="http://reference.sitepoint.com/html/center">"Center."</a> <i>Reference.</i> SitePoint. Web. 25 Oct. 2015.</center></p>
+<p><center>Montulli, Lou. <a href="http://www.montulli.org/lou">"Lou Montulli."</a> <i>Montulli.org</i>. Google Sites, 2015. Web. 9 Dec. 2015.</center></p>
+<p><center>Montulli, Lou. <a href="https://lists.w3.org/Archives/Public/www-style/1995Jul/0080.html">"NCSA Mosaic, Netscape, and HTML3."</a> <i>Lists.W3C.org.</i> W3C, 18 July 1995. Web. 25 Oct. 2015.</center></p>
+<p><center>Navarro, Ann. <a href="https://lists.w3.org/Archives/Public/w3c-wai-ig/1999JanMar/0426.html">"HTML Deprecation."</a> <i>Lists.W3C.org.</i> W3C, 24 Mar. 1999. Web. 25 Oct. 2015.</center></p>
+<p><center><a href="http://www.angelibrary.com/computer/HTML_example/ch19.htm">"Netscape HTML."</a> <i>Angelibrary.com.</i> Angelibrary, 1999. Web. 23 Oct. 2015.</center></p>
+<p><center>Nielsen, Jakob. <i>Designing Web Usability.</i> San Francisco: New Riders, 2000. Print.</center></p>
+<p><center>Pilgrim, Mark. "How Did We Get Here?" <i>DiveIntoHTML5.org</i>. Dive Into HTML5, 2011. Web. 8 Dec. 2015.</center></p>
+<p><center>Pollack, Paul. <a href="http://jnocook.net/html/nhtml.htm">"NHTML: What Doesn't Work."</a> <i>JNOCook.net.</i> Web. 23 Oct. 2015.</center></p>
+<p><center>Preece, Scott E. <a href="https://lists.w3.org/Archives/Public/www-style/1995Jul/0085.html">"NCSA Mosaic, Netscape, and HTML3."</a> <i>Lists.W3C.org.</i> W3C, 19 July 1995. Web. 25 Oct. 2015.</center></p>
+<p><center>Raggett, Dave. <a href="http://www.w3.org/TR/REC-html32">"HTML 3.2 Reference Specification."</a> <i>W3C.org.</i> W3C, 14 Jan. 1997. Web. 24 Oct. 2015.</center></p>
+<p><center>Raggett, Dave, Jenny Lam, Ian Alexander, and Michael Kmiec. <a href="http://www.w3.org/People/Raggett/book4/ch02.html">"A History of HTML."</a> <i>Raggett on HTML 4.</i> Harlow: Addison Wesley Longman, 1998. W3.org. W3C, 1998. Web. 23 Oct. 2015.</center></p>
+<p><center>Sanders, Tony. <a href="http://1997.webhistory.org/www.lists/www-talk.1994q4/0358.html">"CENTER Element."</a> <i>1997.WebHistory.</i> 1997 Web History, 21 Oct. 1994. Web. 23 Oct. 2015.</center></p>
+<p><center><a href="http://www.uiwizards.com/wBloop14.html">"Web Blooper of the Month."</a> <i>UIWizards.com.</i> UI Wizards, Jan. 2003. Web. 25 Oct. 2015.</center></p>
+<p><center>Zhang, Lily. <a href="https://www.themuse.com/advice/12-tiny-changes-that-make-your-resume-easy-for-recruiters-to-skim">"12 Tiny Changes That Make Your Resume Easy for Recruiters to Skim."</a> <i>Themuse.com.</i> The Muse, 2015. Web. 25 Oct. 2015.</center></p>            
+</div>
+<a class="page-scroll" href="#page-top">Top</a>         
+</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Layout by Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
